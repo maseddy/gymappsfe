@@ -1,0 +1,96 @@
+/* Full-page flex container */
+.login-container {
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;  /* Center vertically */
+    /*height: 100vh;*/
+    background-color: #f8f9fa;
+  }
+  
+  /* Card-like form container */
+  .login-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form field spacing */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+
+  .form-control{
+    padding: 5px 10px;
+  }
+  
+  .form-group label {
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+
+
+  .form-footer {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align text to the left */
+    gap: 10px; /* Space between elements */
+  }
+  
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox-group input {
+    margin-right: 5px;
+  }
+  
+  .forgot-password {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 0.9rem;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: underline;
+  }
+  
+  /* Button Styling */
+  .btn-primary {
+    background-color: #DC143C;
+    color: #ffffff;
+    border: none;
+    padding: 10px;
+    font-size: 0.9rem;
+    border-radius: 5px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #B22222;
+  }
+
+  .submit-btn{
+    margin-top: 20px;
+    padding: 10px 78px;
+  }
+
+  .small-swal {
+    font-size: 14px !important;
+    padding: 10px !important;
+  }
+
+  .small-ok-btn {
+    font-size: 7px !important; /* Smaller text */
+    padding: 5px 10px !important; /* Adjust padding */
+    border-radius: 4px !important; /* Optional: rounded corners */
+    width: auto; /* Ensure the size adjusts properly */
+    height: auto; /* Optional: dynamic height */
+  }
+  
+  

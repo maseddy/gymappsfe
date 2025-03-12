@@ -1,8 +1,11 @@
 export interface Member {
-    id: number;
-    name: string;
-    email: string;
-    phone: string;
-    membershipType: string;
+  id: number;
+  firstName: string;
+  lastName: string;
+  name: string;
+  email: string;
+  phone: string;
+  joinDate: string;
+  age: number;
   }
   

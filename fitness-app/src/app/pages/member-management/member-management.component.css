@@ -1,0 +1,99 @@
+/* Overlay for Popup */
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup-card {
+    position: relative;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  .btn-success {
+    background-color: #28a745 !important; /* Green */
+    border: none;
+    color: white !important;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545 !important; /* Red */
+    border: none;
+    color: white !important;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .close-btn:hover {
+    color: red;
+  }
+  
+  /* Form Spacing */
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .small-swal {
+    font-size: 14px !important;
+    padding: 10px !important;
+  }
+
+  .small-ok-btn {
+    font-size: 7px !important; /* Smaller text */
+    padding: 5px 10px !important; /* Adjust padding */
+    border-radius: 4px !important; /* Optional: rounded corners */
+    width: auto; /* Ensure the size adjusts properly */
+    height: auto; /* Optional: dynamic height */
+  }
+  
+  /* Buttons */
+  .btn {
+    font-size: 16px;
+    padding: 3px 10px;
+    border-radius: 5px;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 576px) {
+    .popup-card {
+      width: 90%;
+    }
+  
+    .btn {
+      width: 100%;
+    }
+  }
+  

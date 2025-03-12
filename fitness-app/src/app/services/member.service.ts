@@ -7,19 +7,23 @@ import { Member } from '../models/member.model';
   providedIn: 'root'
 })
 export class MemberService {
-  private apiUrl = 'http://localhost:8080/api/members';
+  private baseUrl = 'http://localhost:8080/api';
 
   constructor(private http: HttpClient) {}
 
-  /*getMembers(): Observable<Member[]> {
-    return this.http.get<Member[]>(this.apiUrl);
+  getMembers(): Observable<Member[]> {
+    return this.http.get<Member[]>(`${this.baseUrl}/listmembers`);
   }
 
   addMember(member: Member): Observable<Member> {
-    return this.http.post<Member>(this.apiUrl, member);
+    return this.http.post<Member>(`${this.baseUrl}/addmembers`, member);
   }
 
-  deleteMember(id: number): Observable<void> {
-    return this.http.delete<void>(`${this.apiUrl}/${id}`);
-  }*/
+  deleteMember(member: Member): Observable<Member> {
+    return this.http.post<Member>(`${this.baseUrl}/deletemember`, member);
+  }
+
+  editMember(member: Member): Observable<Member> {
+    return this.http.post<Member>(`${this.baseUrl}/editmember`, member);
+  }
 }
